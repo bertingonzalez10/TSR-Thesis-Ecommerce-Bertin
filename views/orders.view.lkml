@@ -42,7 +42,7 @@ view: orders {
     }
   }
 
-  dimension: createddate{
+  dimension: Dynamic_date{
     sql:
     {% if choose_order_format._parameter_value == 'year' %}
       ${created_year}
