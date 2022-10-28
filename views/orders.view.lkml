@@ -42,6 +42,17 @@ view: orders {
     }
   }
 
+  dimension: createddate{
+    sql:
+    {% if choose_order_format._parameter_value == 'year' %}
+      ${created_year}
+    {% elsif choose_order_format._parameter_value == 'month' %}
+      ${created_month}
+    {% else %}
+      ${created_date}
+    {% endif %};;
+  }
+
   # Here's what a typical dimension looks like in LookML.
   # A dimension is a groupable field that can be used to filter query results.
   # This dimension will be called "Status" in Explore.
