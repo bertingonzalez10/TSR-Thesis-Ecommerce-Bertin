@@ -30,6 +30,7 @@ view: products {
   dimension: department {
     type: string
     sql: ${TABLE}.department ;;
+    label: "Gender"
   }
 
   dimension: item_name {
