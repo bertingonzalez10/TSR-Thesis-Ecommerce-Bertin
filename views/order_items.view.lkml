@@ -62,7 +62,7 @@ view: order_items {
     html: {% if value < 20 %}
       <p style="color: black; background-color: lightgreen; font-size:100%; text-align:center">{{ "Cheap" }}</p>
     {% elsif value > 50  %}
-      <p style="color: black; background-color: red; font-size:100%; text-align:center">{{ "Expensive" }}</p>
+      <p style="color: black; background-color: yellow; font-size:100%; text-align:center">{{ "Expensive" }}</p>
     {% else %}
       <p style="color: black; background-color: lightblue; font-size:100%; text-align:center">{{ "Affordable" }}</p>
     {% endif %} ;;
