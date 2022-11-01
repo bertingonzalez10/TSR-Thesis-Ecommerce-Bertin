@@ -60,11 +60,11 @@ view: order_items {
     type: number
     sql: ${TABLE}.sale_price ;;
     html: {% if value < 20 %}
-      <p style="color: black; background-color: lightblue; font-size:100%; text-align:center">{{ rendered_value }}</p>
+      <p style="color: black; background-color: lightgreen; font-size:100%; text-align:center">{{ "Cheap" }}</p>
     {% elsif value > 50  %}
-      <p style="color: black; background-color: lightgreen; font-size:100%; text-align:center">{{ rendered_value }}</p>
+      <p style="color: black; background-color: lightred; font-size:100%; text-align:center">{{ "Expensive" }}</p>
     {% else %}
-      <p style="color: black; background-color: orange; font-size:100%; text-align:center">{{ rendered_value }}</p>
+      <p style="color: black; background-color: lightblue; font-size:100%; text-align:center">{{ "Affordable" }}</p>
     {% endif %} ;;
   }
 
