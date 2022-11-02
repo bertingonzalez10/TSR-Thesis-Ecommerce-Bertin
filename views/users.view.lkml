@@ -38,6 +38,11 @@ view: users {
 
   dimension: city {
     type: string
+    link: {
+      label: "Google"
+      url: "http://www.google.com/search?q={{ value }}"
+      icon_url: "http://google.com/favicon.ico"
+    }
     sql: ${TABLE}.city ;;
   }
 
