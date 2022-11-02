@@ -45,7 +45,7 @@ view: orders {
   dimension: Dynamic_date{
     sql:
     {% if choose_order_format._parameter_value == 'year' %}
-      ${created_year}
+      ${created_year} < 2019
     {% elsif choose_order_format._parameter_value == 'month' %}
       ${created_month}
     {% else %}
