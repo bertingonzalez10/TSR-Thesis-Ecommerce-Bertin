@@ -100,7 +100,7 @@ view: users {
   }
 
   measure: count {
-    label:  "One Week Prior {{ 'now' |date:'%s' | minus:691200 | date:'%F' }}"
+    label:  "One Week Prior {{ 1234 }}"
     type: count
     drill_fields: [detail*]
   }
